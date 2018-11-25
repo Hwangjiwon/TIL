@@ -150,7 +150,9 @@ JK플립플롭은 S와 R처럼 동작하는 입력을 가지지만 입력 JK = 1
 ![JKFlip-flop](./img/JK.png)
 
 ![JKFlip-flop](./img/JK2.png)
+
 D Flip-flop으로 구현한 JK Flip-flop
+
 
 ## T Flip-flop
 
@@ -158,9 +160,13 @@ T플립플롭은 현재 상태를 유지(No change)하거나 역수(Complement)�
 
 ![TFlip-flop](./img/T.png)
 
+
 ![TFlip-flop](./img/T.png)
+
+
 (a) JK Flip-flop으로 구현한 T Flip-flop
 (b) D Flip-flop으로 구현한 T Flip-flop
+
 
 ### Summary
 
@@ -176,6 +182,7 @@ T플립플롭은 현재 상태를 유지(No change)하거나 역수(Complement)�
 순차회로의 경우 출력은 입력 뿐만 아니라 플립플롭의 현재 상태에도 의존한다. 
 
 ![ex](./img/ex.png)
+
  하나의 입력 X, 하나의 출력 Z, 두개의 플립플롭 Q1, Q0가 있을 때, 입력 X와 플립플롭 Q1, Q0가 다음 상태의 출력을 결정한다.
 * **Output**
   Z = Q1Q0X   // 모든 입력이 1일때 ANDgate로 인해 Z가 1
@@ -187,7 +194,9 @@ T플립플롭은 현재 상태를 유지(No change)하거나 역수(Complement)�
  > Step 1. 
  >  J1 = X'Q0  ,  K1 = X + Q0  ,  J0 = X + Q1  ,  K0 = X '
  > Step 2. 
+ >
  > ![ex](./img/ex1.png)
+ >
  > Step 3. 
  > 일반적인 JK 플립 플롭 특성 방정식은 Q (t + 1) = K'Q (t) + JQ '(t).
 예제 회로에서는 두 개의 JK 플립 플롭이 있으므로 각각에 적용.
@@ -196,10 +205,13 @@ Q0 (t + 1) = K0'Q0 (t) + J0Q0 '(t)
  ![ex2](./img/ex2.png)
 
 * **결과**
+
 ![ex3](./img/ex3.png)
+
 State Table
 
 ![ex4](./img/ex4.png)
+
 State Diagram
 
   - **TIP**
