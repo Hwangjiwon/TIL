@@ -309,19 +309,19 @@ State Diagram
 * **직렬데이터의 병렬데이터 변환**) LD = 0 이면 순서대로 입력 받아서, CRK을 4번 count. 이 후 LD = 1로 바꾸어 한꺼번에 Q3-Q0까지 output시킴. 
 * **병렬데이터의 직렬데이터 변환**) LD = 1이면 D3-D0이 한번에 input되고, LD = 0으로 바꾸어 CRK이 될 때마다 1bit씩 shift하여 나감.
 
-
 ## Universal Shift Register
 
-* 아래 표의 4가지 상태가 가능한 4bit 범용 레지스터를 설계하라.
+**Q1. 아래 표의 4가지 상태가 가능한 4bit 범용 레지스터를 설계하라.**
+
 ![regTable](./img/regTable.png)
 
- - 상태가 4가지 이므로 4x1 MUX필요. 따라서 4개의 플립플롭과 4개의 MUX로 설계.
- - S1S0 = 00, No change. => 자기의 플립플롭 input을 자기 mux의 input으로 D0에 넣기.
- - S1S0 = 01, Shift right. => 자기 플립플롭 input을 그 이전 bit의 mux의 input으로 D1에 넣기. 최상위 bit의 Mux의 input은 SI for shift-right가 들어감.
- - S1S0 = 10, Shift left. => 자기 플립플롭  input을 그 상위 bit의 mux의 input으로 D2에 넣기. 최하위 bit의 Mux의 input은 SI for shift-left가 들어감.
- - S1S0 = 11, Parallel load => 데이터를 한꺼번에 output. 각각의 D3가 출력.
++ 상태가 4가지 이므로 4x1 MUX필요. 따라서 4개의 플립플롭과 4개의 MUX로 설계.
++ S1S0 = 00, No change. => 자기의 플립플롭 input을 자기 mux의 input으로 D0에 넣기.
++ S1S0 = 01, Shift right. => 자기 플립플롭 input을 그 이전 bit의 mux의 input으로 D1에 넣기. 최상위 bit의 Mux의 input은 SI for shift-right가 들어감.
++ S1S0 = 10, Shift left. => 자기 플립플롭 input을 그 상위 bit의 mux의 input으로 D2에 넣기. 최하위 bit의 Mux의 input은 SI for shift-left가 들어감.
++ S1S0 = 11, Parallel load => 데이터를 한꺼번에 output. 각각의 D3가 출력.
 
 ![4bitShiftReg](./img/4bitShiftReg.png)
 
 
-* 4bit 덧셈기를 Shift Regester와 FullAdder를 이용해 설계하라.
+**Q2. 4bit 덧셈기를 Shift Regester와 FullAdder를 이용해 설계하라.**
