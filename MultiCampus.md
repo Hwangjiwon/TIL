@@ -12,7 +12,7 @@ MultiCampus Study!!
 
 기술이 발전하는 이유는 ? **개발자 편의성** 때문.. (사용자 편의성 X)
 
-1.  프로그램 기법
+## 1.  프로그램 기법
 	- 	50’s 절차중심적 기법
 	- 	6,70’s 정보공학 기법 - DBMS
 	- 	80’s 객체지향적 기법 – Smalltalk
@@ -22,8 +22,9 @@ MultiCampus Study!!
   > - 컴포넌트 : 기능 관련. 독립적인 단위 모듈
   > - Framework:  구조적인 것 관련. 대신해주는 것
 
+<hr>
 
-  2. 구조적 측면  
+##  2. 구조적 측면  
   - MainFrame 시대 - 중앙 집중적, 일체형  
   - Desktop 시대 - 독립적  
   - Network 시대 - 이전의 사이즈 문제 해결 위한 (CS 시대)  
@@ -41,7 +42,9 @@ MultiCampus Study!!
   - 플랫폼 종속성(Platform Dependent) ex) 네스케이프의 NS
   - 플랫폼 독립성 + Thread 기능의 장점이 합쳐진 SUN의 JAVA -> Servelt
 
-  3. Architecture
+<hr>
+
+##  3. Architecture
 
    Servelt = Server + Application : 요청분석 -> 비즈니스 수행(처리) -> 응답  
    Model : Business Component // Servelt의 비즈니스 수행(DB접근...)을 분리해서 처리  
