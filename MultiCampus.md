@@ -43,12 +43,12 @@ MultiCampus Study!!
 
   3. Architecture
 
-   Servelt = Server + Application : 요청분석 -> 비즈니스 수행(처리) -> 응답
-   Model : Business Component // Servelt의 비즈니스 수행(DB접근...)을 분리해서 처리
+   Servelt = Server + Application : 요청분석 -> 비즈니스 수행(처리) -> 응답  
+   Model : Business Component // Servelt의 비즈니스 수행(DB접근...)을 분리해서 처리  
+  == == == == == == == == == == == == == == == == == == == ==  
+   Java EE(Enterprise Edition) : ee.jar 컴파일  +  Web Container : 서포트해주는 인터페이스를 구현 한 코드 집합(ex. Tomcat, Resin, JRun...)  
+   Java SE(Standard Edition) : JRE (JVM + RunTime.jar...)  
   == == == == == == == == == == == == == == == == == == == ==
-   Java EE(Enterprise Edition) : ee.jar 컴파일  +  Web Container : 서포트해주는 인터페이스를 구현 한 코드 집합(ex. Tomcat, Resin, JRun...)
-   Java SE(Standard Edition) : JRE (JVM + RunTime.jar...)
-  == == == == == == == == == == == == == == == == == == == ==
-   Any Web Server (ex. Apache, Nginx, IIS, NS... //http Listener)
-   Any O/S
-   Any H/W
+   Any Web Server (ex. Apache, Nginx, IIS, NS... //http Listener)  
+   Any O/S  
+   Any H/W  
