@@ -17,21 +17,21 @@ MultiCampus Study!!
 	- 	6,70’s 정보공학 기법 - DBMS
 	- 	80’s 객체지향적 기법 – Smalltalk
 	- 	90’s 객체지향 기법 – JAVA
-	- 	컴포넌트기반 기법 – CBD (Component Based Development)
+	- 	컴포넌트기반 기법 – CBD (Component Based Development)  
   > **컴포넌트 vs Framework**
   > - 컴포넌트 : 기능 관련. 독립적인 단위 모듈
   > - Framework:  구조적인 것 관련. 대신해주는 것
 
 
-  2. 구조적 측면
-    - MainFrame 시대 - 중앙 집중적, 일체형
-    - Desktop 시대 - 독립적
-    - Network 시대 - 이전의 사이즈 문제 해결 위한 (CS 시대)
-    - Web Site 시대 - Protocol: http, ftp..., 정적인 처리만 가능  
-    > **왜 Http가 대세가 되었나**
-    > - 개발이 편하다. txt기반
-    > - 표준화된 웹서버, 표준화된 클라이언트
-    > - Connection Reset State 요청 이후 응답 하면 바로 연결 끊음
+  2. 구조적 측면  
+    - MainFrame 시대 - 중앙 집중적, 일체형  
+    - Desktop 시대 - 독립적  
+    - Network 시대 - 이전의 사이즈 문제 해결 위한 (CS 시대)  
+    - Web Site 시대 - Protocol: http, ftp..., 정적인 처리만 가능    
+    >  **왜 Http가 대세가 되었나**
+    >  - 개발이 편하다. txt기반
+    >  - 표준화된 웹서버, 표준화된 클라이언트
+    >  - Connection Reset State 요청 이후 응답 하면 바로 연결 끊음
 
 
     - 동적 처리를 위한 웹서버랑 독립되지 않은 연결된 CGI(Component Gateway Interface)
