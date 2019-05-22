@@ -48,7 +48,7 @@ MultiCampus Study!!
   == == == == == == == == == == == == == == == == == == == ==  
    Java EE(Enterprise Edition) : ee.jar 컴파일  +  Web Container : 서포트해주는 인터페이스를 구현 한 코드 집합(ex. Tomcat, Resin, JRun...)  
    Java SE(Standard Edition) : JRE (JVM + RunTime.jar...)  
-  == == == == == == == == == == == == == == == == == == == ==
+  == == == == == == == == == == == == == == == == == == == ==  
    Any Web Server (ex. Apache, Nginx, IIS, NS... //http Listener)  
    Any O/S  
    Any H/W  
