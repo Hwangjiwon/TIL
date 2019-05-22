@@ -12,7 +12,7 @@ MultiCampus Study!!
 
 기술이 발전하는 이유는 ? **개발자 편의성** 때문.. (사용자 편의성 X)
 
- 1. 프로그램 기법
+1.  프로그램 기법
 	- 	50’s 절차중심적 기법
 	- 	6,70’s 정보공학 기법 - DBMS
 	- 	80’s 객체지향적 기법 – Smalltalk
@@ -21,6 +21,7 @@ MultiCampus Study!!
   > **컴포넌트 vs Framework**
   > - 컴포넌트 : 기능 관련. 독립적인 단위 모듈
   > - Framework:  구조적인 것 관련. 대신해주는 것
+
 
   2. 구조적 측면
     - MainFrame 시대 - 중앙 집중적, 일체형
@@ -32,7 +33,7 @@ MultiCampus Study!!
     > - 표준화된 웹서버, 표준화된 클라이언트
     > - Connection Reset State 요청 이후 응답 하면 바로 연결 끊음
 
-    
+
     - 동적 처리를 위한 웹서버랑 독립되지 않은 연결된 CGI(Component Gateway Interface)
     - Process : 자원을 공유하지 않은 실행중인 프로그램
     - Thread : 자원을 공유하는 실행 흐름  ex) 네스케이프사의 NS API, MS사의 IS API Thread 기반 CGI
