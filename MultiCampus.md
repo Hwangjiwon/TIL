@@ -39,4 +39,16 @@ MultiCampus Study!!
   - Process : 자원을 공유하지 않은 실행중인 프로그램
   - Thread : 자원을 공유하는 실행 흐름  ex) 네스케이프사의 NS API, MS사의 IS API Thread 기반 CGI
   - 플랫폼 종속성(Platform Dependent) ex) 네스케이프의 NS
-  - 플랫폼 독립성 SUN의 JAVA
+  - 플랫폼 독립성 + Thread 기능의 장점이 합쳐진 SUN의 JAVA -> Servelt
+
+  3. Architecture
+
+   Servelt = Server + Application : 요청분석 -> 비즈니스 수행(처리) -> 응답
+   Model : Business Component // Servelt의 비즈니스 수행(DB접근...)을 분리해서 처리
+  == == == == == == == == == == == == == == == == == == == ==
+   Java EE(Enterprise Edition) : ee.jar 컴파일  +  Web Container : 서포트해주는 인터페이스를 구현 한 코드 집합(ex. Tomcat, Resin, JRun...)
+   Java SE(Standard Edition) : JRE (JVM + RunTime.jar...)
+  == == == == == == == == == == == == == == == == == == == ==
+   Any Web Server (ex. Apache, Nginx, IIS, NS... //http Listener)
+   Any O/S
+   Any H/W
