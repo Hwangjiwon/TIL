@@ -28,11 +28,12 @@ MultiCampus Study!!
     - Desktop 시대 - 독립적  
     - Network 시대 - 이전의 사이즈 문제 해결 위한 (CS 시대)  
     - Web Site 시대 - Protocol: http, ftp..., 정적인 처리만 가능    
+
     >  **왜 Http가 대세가 되었나**
     >  - 개발이 편하다. txt기반
     >  - 표준화된 웹서버, 표준화된 클라이언트
     >  - Connection Reset State 요청 이후 응답 하면 바로 연결 끊음
-
+    >  
 
     - 동적 처리를 위한 웹서버랑 독립되지 않은 연결된 CGI(Component Gateway Interface)
     - Process : 자원을 공유하지 않은 실행중인 프로그램
