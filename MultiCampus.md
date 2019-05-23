@@ -57,7 +57,7 @@ MultiCampus Study!!
    > Instance영역 + Method영역  
    > Instance영역 = Young Generation + Old Generation  
    > Young Generation영역 = eden영역 + survive영역 2개
-   > Method영역 = 일반구조 + Static + Final(String Iiteral pool: 문자열이 올라가는 구역) + 기타영역
+   > Method영역(Permanent Generation. PERM GEN) = 일반구조 + Static + Final(String Iiteral pool: 문자열이 올라가는 구역) + 기타영역  
    >  
    > **None-Heap**  
    > 
@@ -88,7 +88,7 @@ Software Architecure는 소프트웨어 구성요소들 사이에서 관계표�
 Enterprise Architecure은 JAVA로 개발되어 있기 때문에 JAVA필수.
 Multi User 수용하는 SYSYTEM. 안정성 중요하기 때문에 JAVA쓰는 것.  
 
-> **로드벨런싱**  
+> **로드밸런싱**  
 > 수평적인 확장이 가능하게끔 만들어주는 것.  
 > 들어오는 요청을 서버 중 하나로 라우팅 처리해주며, 클라이언트로 응답.  
 > 즉, 서버의 과부하를 막아주기 위해 요청을 분산시키는 일  
