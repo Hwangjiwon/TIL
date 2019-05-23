@@ -49,9 +49,20 @@ MultiCampus Study!!
    html,css,js / CGI / Window탐색기 / ...  
    Servelt = Server + Application : 요청분석 -> 비즈니스 수행(처리) -> 응답  // Thread로 동작하고, 플랫폼 독립성  
    Model : Business Component // Servelt의 비즈니스 수행(DB접근...)을 분리해서 처리  
-  == == == == == == == == == == == == == == == == == == == ==  
-   Java EE(Enterprise Edition) : ee.jar 컴파일  +  Web Container : 서포트해주는 인터페이스를 구현 한 코드 집합(ex. Tomcat, Resin, JRun...)  
-   Java SE(Standard Edition) : JRE (JVM + RunTime.jar...)  
+  == == == == == == == == == == == == == == == == == == == == 
+   Java Code, Eclipse...  
+   Java EE(Enterprise Edition) : ee.jar 컴파일 but, 실행은 안됨  +  Web Container : 구현체. 서포트해주는 인터페이스를 구현 한 코드 집합(ex. Tomcat, Resin, JRun...)  
+   > **Heap**  
+   >  
+   > Instance영역 + Method영역  
+   > Instance영역 = Young Generation + Old Generation  
+   > Young Generation영역 = eden영역 + survive영역 2개
+   > Method영역 = 일반구조 + Static + Final(String Iiteral pool: 문자열이 올라가는 구역) + 기타영역
+   >  
+   > **None-Heap**  
+   > 
+   
+   Java SE(Standard Edition) : JRE (JVM + RunTime.jar...) - JRE가 ByteCode(.class)를 ClassLoader가 읽어오도록 시키고 그를 해석. JVM가 load하는데 main제외한 static멤버 초기화해서 메모리에 load해옴.   
   == == == == == == == == == == == == == == == == == == == ==  
    Any Web Server (ex. Apache, Nginx, IIS, NS...) -> http Listener : http이해하는 프로그램. 따라서 요청을 이해할 수 있음    
    Any O/S  
@@ -74,15 +85,21 @@ Enterprise Web Architecure
 -------------
 
 Software Architecure는 소프트웨어 구성요소들 사이에서 관계표현. 설계와 업그레이드를 통제하는 지침과 원칙
-
-
-## 1. Client - Server Pattern  
-다수의 Client, 하나의 Server.
+Enterprise Architecure은 JAVA로 개발되어 있기 때문에 JAVA필수.
+Multi User 수용하는 SYSYTEM. 안정성 중요하기 때문에 JAVA쓰는 것.  
 
 > **로드벨런싱**  
 > 수평적인 확장이 가능하게끔 만들어주는 것.  
 > 들어오는 요청을 서버 중 하나로 라우팅 처리해주며, 클라이언트로 응답.  
 > 즉, 서버의 과부하를 막아주기 위해 요청을 분산시키는 일  
+
+> **Dynamic Load**  
+> JAVA는 독적으로 클래스를 읽어옴.  
+> 런타임에 모든 코드가 JVM에 링크된다.
+> 모든 클래스는 그 클래스가 참조되는 순간에 동적으로 JVM에 링크되며, 메모리에 로딩된다.  
+
+## 1. Client - Server Pattern  
+다수의 Client, 하나의 Server.
 
 
 
