@@ -123,4 +123,11 @@ VM ware
 Any OS  
 Any H/W  
 
+------------
+
+Diagram Architecure
+-------------
+
+![DiagramArchitectecure](./img/architecture_diagram1.png)
+Architecure Diagram Example    
 
