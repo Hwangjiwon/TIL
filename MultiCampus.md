@@ -101,5 +101,26 @@ Multi User 수용하는 SYSYTEM. 안정성 중요하기 때문에 JAVA쓰는 것
 ## 1. Client - Server Pattern  
 다수의 Client, 하나의 Server.
 
+<hr>
+
+**[ 인프라구축강의 3일차 ]**  
+
+----------
+
+
+Docker
+------------- 
+
+docker_sample.word 를 참고하여 Docker로 Mysql 사용하기  
+
+[구조]  
+...  
+MySQL Client / MySQL Server  
+Debian 9  
+Docker  
+Guest OS(Ubuntu 16.04)  
+VM ware  
+Any OS  
+Any H/W  
 
 
