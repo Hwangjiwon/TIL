@@ -195,10 +195,10 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
 2. Model 2 Architecture  
 	: Servlet 사용하여 view와 Controller 분리한 구조
 	: JSP는 View를 담당, Java Class에서 비즈니스 로직 담당    
-	: Servlet 생성  // New -> Servlet -> Java package = web.controller , Class name = MainServelt 으로 지정 -> next  
-	: Servlet 설정  // URL mappings /Main으로 설정.-> next  모든 요청이 Servelet을 거치도록 설정. but Servlet로 경로 알 수 없어야 함.
-	: Servelt 설정2 // constructors from superclass 체크 해제  
-	: Restarting Server  
+	 1. Servlet 생성  // New -> Servlet -> Java package = web.controller , Class name = MainServelt 으로 지정 -> next  
+	 2. Servlet 설정  // URL mappings /Main으로 설정.-> next  모든 요청이 Servelet을 거치도록 설정. but Servlet로 경로 알 수 없어야 함.
+	 3. Servelt 설정2 // constructors from superclass 체크 해제  
+	 4. Restarting Server  
 
 3. 기초 보안 설정
 	- MainServlet.java에 process라는 메소드 만들어서(doPost메소드 복사 후 이름만 process로 바꿔) 모든 메소드 process로 포워딩 시키는 메소드
