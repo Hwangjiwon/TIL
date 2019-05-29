@@ -169,9 +169,9 @@ HTML/CSS
 ## 4. Enterprise Web Architecture 구성
 1. Tomcat설치
 2. jdk설치
-3.
+3. JAVA_HOME 환경변수 설정
 
 ## 5. 구조
-apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
-docs, examples, host-manager, manager, ROOT  
+apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.  
+docs, examples, host-manager, manager, ROOT   
 각자 메모리 스택을 다른 것 사용. 공유하지 않음  
