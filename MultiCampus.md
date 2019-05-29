@@ -192,10 +192,10 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
 
 
 ## 7. Model Architecture  
-1. Model 1 Architecture  
+## 1. Model 1 Architecture  
  	: JSP파일 내에 View와 Controller 모두 실행되는 구조  
 
-2. Model 2 Architecture  
+## 2. Model 2 Architecture  
 	: Servlet 사용하여 view와 Controller 분리한 구조  
 	: JSP는 View를 담당, Java Class에서 비즈니스 로직 담당    
 	 1. Servlet 생성  // New -> Servlet -> Java package = web.controller , Class name = MainServelt 으로 지정 -> next   
@@ -205,10 +205,10 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
 	: index.html의 form action = "Main?sign=login"으로 바꿈  
 	: MainServelet.java에서 process 메소드 안에 sign이 login으로 왔는지 검사 후 처리  
 
-3. MVC패턴
+## 3. MVC패턴
 
 
-4. 기초 보안 설정
+## 4. 기초 보안 설정
 	- MainServlet.java에 process라는 메소드 만들기(doPost메소드 복사 후 이름만 process로 바꿔)  
 	- doGet, doPost메소드 안에 process(request,response) 메소드 호출  
 	- process(HttpServletRequest request, HttpServeltResponse response)는 모든 요청 메소드를 process로 포워딩 시키는 메소드  
