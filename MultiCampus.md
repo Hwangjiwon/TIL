@@ -148,6 +148,30 @@ HTML/CSS
 > **SPA**  
 > Single Page Application
 > 비동기화 호출로 메모리를 유지, 다른 페이지에서 그대로 사용
-> 서버로부터 완전한 새로운 페이지를 불러오지 않고 현재의 페이지를 동적으로 다시 작성함으로써 사용자와 소통하는 웹 애플리케이션이나 웹사이트를 말한다. 이러한 접근은 연속되는 페이지들 간의 사용자 경험의 간섭을 막아주고 애플리케이션이 더 데스크톱 애플리케이션처럼 동작하도록 만들어 줌.
-> 장점: BandWidth 적어짐
-> 단점: 오히려 Request가 보이지 않게 계속 갈 수도 있음 --- Network가 바쁜상태라면 Server에서도 무리.. DB Access도..
+> 서버로부터 완전한 새로운 페이지를 불러오지 않고 현재의 페이지를 동적으로 다시 작성함으로써 사용자와 소통하는 웹 애플리케이션이나 웹사이트를 말한다. 이러한 접근은 연속되는 페이지들 간의 사용자 경험의 간섭을 막아주고 애플리케이션이 더 데스크톱 애플리케이션처럼 동작하도록 만들어 줌.  
+> 장점: BandWidth 적어짐  
+> 단점: 오히려 Request가 보이지 않게 계속 갈 수도 있음 --- Network가 바쁜상태라면 Server에서도 무리.. DB Access도..  
+> 따라서 비기능적 요구사항(node개수, H/W사양, Contents의 방식, DB,...)까지 파악해서 설계해야..
+
+
+
+## 2. 표현기술
+- Client : Html, CSS, JS  
+- Server : jsp, asp, php //모든 처리 후, 결과 html을 포함  
+- .jsp에는 80%정도의 html이 있어야 함.. 그게 좋은 구성  
+
+
+## 3. jsp
+- jsp파일 사용하는 프로그램은 반드시 WEB-INF 폴더가 있고, 그 속에 web.xml이 있다
+- web.xml은 많은 정보가 포함되어 있기에 보안 중요
+- apache-tomcat-8.5.41 bin startup.bat 했을때 jdk가 설치가 안되어 있으면 실행 안됨. 설치 후 실행(localhost:8080)  
+
+## 4. Enterprise Web Architecture 구성
+1. Tomcat설치
+2. jdk설치
+3.
+
+## 5. 구조
+apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
+docs, examples, host-manager, manager, ROOT  
+각자 메모리 스택을 다른 것 사용. 공유하지 않음  
