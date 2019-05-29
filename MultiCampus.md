@@ -202,8 +202,13 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
 	 2. Servlet 설정  // URL mappings /Main으로 설정.-> next  모든 요청이 Servelet을 거치도록 설정. but Servlet로 경로 알 수 없어야 함.  
 	 3. Servelt 설정2 // constructors from superclass 체크 해제    
 	 4. Restarting Server  
+	: index.html의 form action = "Main?sign=login"으로 바꿈  
+	: MainServelet.java에서 process 메소드 안에 sign이 login으로 왔는지 검사 후 처리  
 
-3. 기초 보안 설정
+3. MVC패턴
+
+
+4. 기초 보안 설정
 	- MainServlet.java에 process라는 메소드 만들기(doPost메소드 복사 후 이름만 process로 바꿔)  
 	- doGet, doPost메소드 안에 process(request,response) 메소드 호출  
 	- process(HttpServletRequest request, HttpServeltResponse response)는 모든 요청 메소드를 process로 포워딩 시키는 메소드  
