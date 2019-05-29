@@ -129,7 +129,10 @@ Diagram Architecure
 -------------
 
 ![DiagramArchitectecure](./img/architecture_diagram1.png)
-Architecure Diagram Example    
+Architecure Diagram Example   
+
+> **Tip**
+> visual paradigm <https://online.visual-paradigm.com/diagrams.jsp#diagramlist:proj=0&new=AWSDiagram>   
 
 
 <hr>
@@ -176,30 +179,32 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
  : docs, examples, host-manager, manager, ROOT   
 각자 메모리 스택을 다른 것 사용. 공유하지 않음  
 
-> **Tip**
+> **Tip**  
 > 수정할 파일에서 오른쪽 클릭 open with web page editor  
 > window->show view -> other -> general -> palette  
 > 편하게 UI 구성할 수 있게 됨!  
 
 
-## 6. jsp 파일 사용하기
+## 6. jsp 파일 사용하기  
 - 넘어온 값을 출력하기 <% ... %>  
  	1. String id = request.getParamether("id");  
 	2. out.println(id); //사용자 버퍼에 출력. 브라우저에 출력  
 
 
-## 7. Model Architecture
-1. Model 1 Architecture
+## 7. Model Architecture  
+1. Model 1 Architecture  
  	: JSP파일 내에 View와 Controller 모두 실행되는 구조  
 
 2. Model 2 Architecture  
-	: Servlet 사용하여 view와 Controller 분리한 구조
+	: Servlet 사용하여 view와 Controller 분리한 구조  
 	: JSP는 View를 담당, Java Class에서 비즈니스 로직 담당    
-	 1. Servlet 생성  // New -> Servlet -> Java package = web.controller , Class name = MainServelt 으로 지정 -> next  
-	 2. Servlet 설정  // URL mappings /Main으로 설정.-> next  모든 요청이 Servelet을 거치도록 설정. but Servlet로 경로 알 수 없어야 함.
-	 3. Servelt 설정2 // constructors from superclass 체크 해제  
+	 1. Servlet 생성  // New -> Servlet -> Java package = web.controller , Class name = MainServelt 으로 지정 -> next   
+	 2. Servlet 설정  // URL mappings /Main으로 설정.-> next  모든 요청이 Servelet을 거치도록 설정. but Servlet로 경로 알 수 없어야 함.  
+	 3. Servelt 설정2 // constructors from superclass 체크 해제    
 	 4. Restarting Server  
 
 3. 기초 보안 설정
-	- MainServlet.java에 process라는 메소드 만들어서(doPost메소드 복사 후 이름만 process로 바꿔) 모든 메소드 process로 포워딩 시키는 메소드
-	- index.html form태그안에 method = "post"로 설정해서 url에 매개변수 뜨지 않게 설정
+	- MainServlet.java에 process라는 메소드 만들기(doPost메소드 복사 후 이름만 process로 바꿔)  
+	- doGet, doPost메소드 안에 process(request,response) 메소드 호출  
+	- process(HttpServletRequest request, HttpServeltResponse response)는 모든 요청 메소드를 process로 포워딩 시키는 메소드  
+	- index.html form태그안에 method = "post"로 설정해서 url에 매개변수 뜨지 않게 설정  
