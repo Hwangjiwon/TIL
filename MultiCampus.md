@@ -49,7 +49,7 @@ MultiCampus Study!!
    html,css,js / CGI / Window탐색기 / ...  
    Servelt = Server + Application : 요청분석 -> 비즈니스 수행(처리) -> 응답  // Thread로 동작하고, 플랫폼 독립성  
    Model : Business Component // Servelt의 비즈니스 수행(DB접근...)을 분리해서 처리  
-  == == == == == == == == == == == == == == == == == == == == 
+  == == == == == == == == == == == == == == == == == == == ==
    Java Code, Eclipse...  
    Java EE(Enterprise Edition) : ee.jar 컴파일 but, 실행은 안됨  +  Web Container : 구현체. 서포트해주는 인터페이스를 구현 한 코드 집합(ex. Tomcat, Resin, JRun...)  
    > **Heap**  
@@ -60,22 +60,22 @@ MultiCampus Study!!
    > Method영역(Permanent Generation. PERM GEN) = 일반구조 + Static + Final(String Iiteral pool: 문자열이 올라가는 구역) + 기타영역  
    >  
    > **None-Heap**  
-   > 
-   
+   >
+
    Java SE(Standard Edition) : JRE (JVM + RunTime.jar...) - JRE가 ByteCode(.class)를 ClassLoader가 읽어오도록 시키고 그를 해석. JVM가 load하는데 main제외한 static멤버 초기화해서 메모리에 load해옴.   
   == == == == == == == == == == == == == == == == == == == ==  
    Any Web Server (ex. Apache, Nginx, IIS, NS...) -> http Listener : http이해하는 프로그램. 따라서 요청을 이해할 수 있음    
    Any O/S  
    Any H/W  
-   
-   
-   
-   
- 
+
+
+
+
+
  <hr>
-  
- 
-   
+
+
+
 **[ 인프라구축강의 2일차 ]**  
 
 ----------
@@ -109,7 +109,7 @@ Multi User 수용하는 SYSYTEM. 안정성 중요하기 때문에 JAVA쓰는 것
 
 
 Docker
-------------- 
+-------------
 
 docker_sample.word 를 참고하여 Docker로 Mysql 사용하기  
 
@@ -131,3 +131,23 @@ Diagram Architecure
 ![DiagramArchitectecure](./img/architecture_diagram1.png)
 Architecure Diagram Example    
 
+
+<hr>
+
+**[ FullStack 1일차 ]**  
+
+----------
+HTML/CSS
+-------------  
+## 1. 3-Tier  
+- Client  
+- Server  
+- Storage :  컴퓨터 프로세서가 접근할 수 있도록 전자기적인 형태로 데이터를 저장하는 장소를 말한다. 1차 스토리지는 램과 기타 여러 내부 장치들에 있는 데이터이며, 2차 스토리지는 하드디스크, 테이프, 그리고 기타 외부 장치들에 있는 데이터  
+
+
+> **SPA**  
+> Single Page Application
+> 비동기화 호출로 메모리를 유지, 다른 페이지에서 그대로 사용
+> 서버로부터 완전한 새로운 페이지를 불러오지 않고 현재의 페이지를 동적으로 다시 작성함으로써 사용자와 소통하는 웹 애플리케이션이나 웹사이트를 말한다. 이러한 접근은 연속되는 페이지들 간의 사용자 경험의 간섭을 막아주고 애플리케이션이 더 데스크톱 애플리케이션처럼 동작하도록 만들어 줌.
+> 장점: BandWidth 적어짐
+> 단점: 오히려 Request가 보이지 않게 계속 갈 수도 있음 --- Network가 바쁜상태라면 Server에서도 무리.. DB Access도..
