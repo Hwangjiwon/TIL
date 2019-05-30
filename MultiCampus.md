@@ -199,7 +199,7 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
 	: Servlet 사용하여 view와 Controller 분리한 구조  
 	: JSP는 View를 담당, Java Class에서 비즈니스 로직 담당    
 >
-		1. Servlet 생성  // New -> Servlet -> Java package = web.controller , Class name = MainServelt 으로 지정 -> next   
+	  1. Servlet 생성  // New -> Servlet -> Java package = web.controller , Class name = MainServelt 으로 지정 -> next   
 	  2. Servlet 설정  // URL mappings /Main으로 설정.-> next  모든 요청이 Servelet을 거치도록 설정. but Servlet로 경로 알 수 없어야 함.  
 	  3. Servelt 설정2 // constructors from superclass 체크 해제    
 	  4. Restarting Server  
@@ -215,6 +215,7 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
 	- process(HttpServletRequest request, HttpServeltResponse response)는 모든 요청 메소드를 process로 포워딩 시키는 메소드  
 	- index.html form태그안에 method = "post"로 설정해서 url에 매개변수 뜨지 않게 설정  
 
+<hr>
 
 **[ FullStack 2일차 ]**  
 
@@ -224,6 +225,6 @@ HTML/CSS
 
 **1. HTML5 고급 문서 작성**  
   
-> **submit vs button**
+> **submit vs button**  
 > submit은 서버 측에 CGI를 action을 처리해 달라고 요청할 때 사용   
 > button은 개발자가 직접 처리를 설정할 때  
