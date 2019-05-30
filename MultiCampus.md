@@ -214,3 +214,16 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
 	- doGet, doPost메소드 안에 process(request,response) 메소드 호출  
 	- process(HttpServletRequest request, HttpServeltResponse response)는 모든 요청 메소드를 process로 포워딩 시키는 메소드  
 	- index.html form태그안에 method = "post"로 설정해서 url에 매개변수 뜨지 않게 설정  
+
+
+**[ FullStack 2일차 ]**  
+
+----------
+HTML/CSS
+-------------  
+
+**1. HTML5 고급 문서 작성**  
+  
+> **submit vs button**
+> submit은 서버 측에 CGI를 action을 처리해 달라고 요청할 때 사용   
+> button은 개발자가 직접 처리를 설정할 때  
