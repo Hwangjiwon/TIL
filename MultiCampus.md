@@ -217,7 +217,7 @@ apache-tomcat에 webapps에 보면 5가지의 context가 있는 것.
 
 <hr>
 
-**[ FullStack 2일차 ]**  
+**[ FullStack 2,3일차 ]**  
 
 ----------
 HTML/CSS
@@ -228,3 +228,8 @@ HTML/CSS
 > **submit vs button**  
 > submit은 서버 측에 CGI를 action을 처리해 달라고 요청할 때 사용   
 > button은 개발자가 직접 처리를 설정할 때  
+
+**2. jsp 파일 분리**
+- index.jsp에 header.jsp, side.jsp, content.jsp...로 나눠 표현
+- <jsp:include page="header.jsp"></jsp:include>
+- 상대경로 지정으로 url이 꼬일 때는 절대경로로 지정! /프로젝트명/...
