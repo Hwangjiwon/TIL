@@ -227,7 +227,7 @@ HTML/CSS
   
 > **submit vs button**  
 > submit은 서버 측에 CGI를 action을 처리해 달라고 요청할 때 사용   
-> button은 개발자가 직접 처리를 설정할 때  
+> button은 개발자가 직접 처리를 해야 함. JS 같은거로,, 
 
 **2. jsp 파일 분리**
 - index.jsp에 header.jsp, side.jsp, content.jsp...로 나눠 표현
