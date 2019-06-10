@@ -273,3 +273,32 @@ console.log(kim.eyes); // => 2
 eyes와 nose를 어딘가에 넣어놓고 공유하여 사용  
 Person.prototype이라는 빈 object가 어딘가에 존재하고, Person함수로 생성된 객체들도 어딘가에 존재하는 Object에 들어있는 값을 모두 갖다 쓸 수 있다.  
 
+## 3. 카드뒤집기
+```html
+ <!DOCTYPE html>
+ <html>
+     <head>
+        <script>
+          function image_onclick(img){
+              var images = new Array("C:/a.jpg","C:/a2.jpg","C:/a3.jpg");
+              var imgSource = document.getElementById(img);
+                  if(img.endsWith("img1"))
+                  imgSource.src = images[1];
+                  else if(img.endsWith("img2"))
+                  imgSource.src = images[2];
+              setTimeout(function(){imgSource.src = images[0]},1500);
+          }
+        </script>
+     </head>
+
+     <body>
+        <h2>카드뒤집기</h2>
+
+        <img id="img1" src="C:/a.jpg" onclick="image_onclick(id)">
+        <img id="img2" src="C:/a.jpg" onclick="image_onclick(id)">
+
+
+     </body>
+ </html>
+
+```
