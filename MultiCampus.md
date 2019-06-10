@@ -233,3 +233,43 @@ HTML/CSS
 - index.jsp에 header.jsp, side.jsp, content.jsp...로 나눠 표현
 - <jsp:include page="header.jsp"></jsp:include>
 - 상대경로 지정으로 url이 꼬일 때는 절대경로로 지정! /프로젝트명/...
+
+
+----------  
+JavaScript  
+-------------  
+
+**JavaScript Prototype**
+## 1. 개념  
+JavaScript는 프로토기반 언어. 자바스크립트도 객체지향언어인데 클래스 개념이 없음.
+상속기능 등 객체지향의 특징을 이용하기 위해 프로토타입을 이용
+ECM6 표준에는 Class가 추가되었다. 클래스기반으로 바뀐것은 아님
+
+
+## 2. 사용 예시  
+```javascript
+function Person() {
+  this.eyes = 2;
+  this.nose = 1;
+}
+var kim  = new Person();
+var park = new Person();
+console.log(kim.eyes);  // => 2
+console.log(kim.nose);  // => 1
+console.log(park.eyes); // => 2
+console.log(park.nose); // => 1
+```
+kim과 park은 eyes와 nose를 공통적으로 가지고 있는데, 메모리에는 eyes와 nose가 각각 할당되어 메모리 소비 큼  
+
+```javascript
+function Person() {}
+Person.prototype.eyes = 2;
+Person.prototype.nose = 1;
+var kim  = new Person();
+var park = new Person():
+console.log(kim.eyes); // => 2
+...
+```
+eyes와 nose를 어딘가에 넣어놓고 공유하여 사용  
+Person.prototype이라는 빈 object가 어딘가에 존재하고, Person함수로 생성된 객체들도 어딘가에 존재하는 Object에 들어있는 값을 모두 갖다 쓸 수 있다.  
+
