@@ -327,9 +327,9 @@ vs
  단일문자형 없음 그냥 var. 모두 string  
  논리도 var  
 //}  
-<script>에 넣으면 바로 실행
+<script>에 넣으면 바로 실행  
 	
-## 2. DOM(Document Object Model) vs  BOM(Browser Object Model)
+## 2. DOM(Document Object Model) vs  BOM(Browser Object Model)  
 
 - DOM  
 문서의 구조화된 표현. 웹페이지의 객체 지향 표현  
