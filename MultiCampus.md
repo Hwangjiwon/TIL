@@ -317,7 +317,7 @@ class Hello{
  단일문자 - char  
  논리 - boolean  
 }  
-시작메서드가 없으면 안돌아감
+시작메서드가 없으면 안돌아감  
 
 vs  
 
@@ -329,8 +329,10 @@ vs
 //}  
 <script>에 넣으면 바로 실행  
 	
-## 2. DOM(Document Object Model) vs  BOM(Browser Object Model)  
-
+ <br>	
+  
+## 2. DOM(Document Object Model) vs BOM(Browser Object Model)  
+  
 - DOM  
 문서의 구조화된 표현. 웹페이지의 객체 지향 표현  
 웹페이지를 JS로 제어하기 위한 객체 모델  
@@ -339,3 +341,13 @@ vs
 - BOM
 자바스크립트가 브라우저와 소통하기 위한 모델.  
 웹 브라우저의 창이나 프레임을 추상화하여 프로그래밍적으로 제어할 수 있도록 제공하는 수단  
+
+
+<br>  
+## 3. get, set   
+
+일종의 시큐어코딩.  
+객체의 필드에 직접 접근하지 않는 법  
+만약 외부에서 직접 데이터(필드)에 접근하게되면 객체의 무결성이 깨질 수 있음  
+따라서 필드를 private로 하여 외부 접근 제한하고, setter를 사용헤 값을 가공할 수 있도록 함  
+마찬가지로 getter를 사용해 본 필드의 값을 숨기고 내부에서 가공된 값을 가져올 수 있게 함  
