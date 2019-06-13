@@ -302,3 +302,40 @@ Person.prototype이라는 빈 object가 어딘가에 존재하고, Person함수�
  </html>
 
 ```
+
+----------  
+Java get/set vs Javascript get/set
+-------------  
+
+## 1. Java vs JS  
+
+class Hello{  
+ data  
+ method  
+ 숫자 - 정수(byte, int, short, long), 실수(float, double)  
+ 	int, double이 기본타입  
+ 단일문자 - char  
+ 논리 - boolean  
+}  
+시작메서드가 없으면 안돌아감
+
+vs  
+
+//class Window{  
+ data  
+ method
+ 단일문자형 없음 그냥 var. 모두 string  
+ 논리도 var  
+//}  
+<script>에 넣으면 바로 실행
+	
+## 2. DOM(Document Object Model) vs  BOM(Browser Object Model)
+
+- DOM  
+문서의 구조화된 표현. 웹페이지의 객체 지향 표현  
+웹페이지를 JS로 제어하기 위한 객체 모델  
+윈도우에 로드된 문서를 의미  
+
+- BOM
+자바스크립트가 브라우저와 소통하기 위한 모델.  
+웹 브라우저의 창이나 프레임을 추상화하여 프로그래밍적으로 제어할 수 있도록 제공하는 수단  
