@@ -379,7 +379,7 @@ XHR 객체(브라우저에서 제공하는 것이라 브라우저 버전이 중�
 -- 동기 호출
 	: 갔다올 때 까지 아무것도 안하고 기다림
 
-``` javasctipt
+```javascript
 <script>
 $(document).ready(function(){
   $("button").click(function(){
@@ -393,4 +393,16 @@ $(document).ready(function(){
 $(  )은 함수 $만 있으면(소괄호 없으면) 변수  
 결국 지금까지 JS -> JQuery-> AJAX 로 진행해 온 것은 위의 코드를 이해하기 위함..  
 비동기, 동기 차이도 알 수 있었음  
+
+
+## 2. REST API 방식
+
+보안에 취약,
+서버에서 put, delete를 허용해 줘야 가능한 방식이기 때문에 굉장히 위험  
+그렇기 때문에 get, post만 허용해 놓을 것!!  
+나머지는 절대 금지하게 해야함!!  
+> **Tip**  
+Post는 내 데이터 전달하는 것 
+Get도 내 데이터 전달하는 것, URL에 노출 됨, 용량 제한 있음  
+
 
