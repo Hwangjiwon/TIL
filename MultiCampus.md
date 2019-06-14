@@ -327,10 +327,9 @@ vs
  단일문자형 없음 그냥 var. 모두 string  
  논리도 var  
 //}  
-<script>에 넣으면 바로 실행  
-	
- <br>	
-  
+script태그 에 넣으면 바로 실행  
+
+
 ## 2. DOM(Document Object Model) vs BOM(Browser Object Model)  
   
 - DOM  
@@ -343,7 +342,7 @@ vs
 웹 브라우저의 창이나 프레임을 추상화하여 프로그래밍적으로 제어할 수 있도록 제공하는 수단  
 
 
-<br>  
+ 
 ## 3. get, set   
 
 일종의 시큐어코딩.  
