@@ -405,4 +405,27 @@ $(  )은 함수 $만 있으면(소괄호 없으면) 변수
 Post는 내 데이터 전달하는 것 
 Get도 내 데이터 전달하는 것, URL에 노출 됨, 용량 제한 있음  
 
+AJAX 전송 : 비동기 + DOM유지 
+JQuery AJAX 전송 : 비동기 + DOM유지 + 개발편의성 상승 + 성능저하  
 
+## 3. JSON
+
+속성-값 또는 키-값 쌍으로 이루어진 데이터 오브젝트 전달 하기 위한 xml 규격  
+모두 텍스트  
+따라서 그 안에서 데이터를 뽑아주는 라이브러리 사용하게 됨  
+  var myJSON = JSON.stringify(myObj);   
+   을 이용하여 JS를 JSON으로 바꿔줌  
+JSON은 BOM임. browser에서 제공하는 Obj..  
+window도 BOM..  
+
+```javascript
+  $("#input_name_btn").click(function () {
+        var myObj;
+        myObj = $("#input_name").val();
+
+        $.get("http://70.12.50.51:3000/hello?name="+myObj,function(data){
+            var obj = JSON.parse(data);
+            $("#demo").html("<h1>"+obj.msg+"</h1>");
+        })
+    });    
+```
