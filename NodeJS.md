@@ -65,5 +65,39 @@ add4(10,20);
 add5(10);
 
 ```
+화살표함수 사용하면 this를 사용하여 자기자신의 함수를 표현할 수 있음 
+global이 아니라  
 
+## this
+  
+this가 만들어지는 경우  
 
+1. 일반 함수에서 this -> window  
+2. 중첩 함수에서 this -> window  
+3. 이벤트에서 this -> 이벤트 객체  
+4. 메소드에서 this -> 메소드 객체  
+5. 메소드 내부의 중첩 함수에서 this -> window  
+
+## 비구조화 할당
+
+```javascript
+
+var candyMachine = {
+    status: {
+      name: 'node',
+      count: 5
+    },
+    getCandy: function(){
+        this.status.count--;
+        return this.status.count;
+    },
+};
+
+// var getCandy = candyMachine.getCandy;  // 객체의 dep이 깊어지면 하나의 변수에 담고싶어짐,, 하지만 this가 바뀌기 때문에 에러됨
+// var count = candyMachine.status.count; // 얘도..
+
+console.log(candyMachine.getCandy());
+
+// const { getCandy, status: {count}} = candyMachine; // 왼쪽에 {참조하고 싶은 변수,함수} 오른쪽에 할당하고 싶은 객체 씀 but, 얘도 this때매 에러
+
+```
