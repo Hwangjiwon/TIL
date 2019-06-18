@@ -9,6 +9,12 @@
 
 
 ## 객체 리터럴 
+
+여기서의 리터럴은 변수 및 상수에 저장되는 **값 자체**를 일컫는 말  
+리터럴표기법이란 변수를 선언함과 동시에 그 값을 지정해 주는 표기법  
+코드가 짧기 때문에 자바스크립트 인터프리터의 해석분량도 줄어들어 빨라진다.  
+즉, 코드 간결성과 속도 때문에 사용한다.  
+
 ```javascript
 
 const sayNode = function () {
@@ -34,6 +40,10 @@ console.log(newObj.es6);
 
 
 ## 화살표 함수
+
+일반적인 function표현에 비해 구문이 짧고 this, arg, super, new target을 바인딩하지 않는다.  
+항상 익명이다.  
+그래서 생성자로 사용할 수 없다.  
 
 ```javascript
 
@@ -70,13 +80,28 @@ global이 아니라
 
 ## this
   
-this가 만들어지는 경우  
-
+* JavaScript에서 this가 만들어지는 경우  
 1. 일반 함수에서 this -> window  
 2. 중첩 함수에서 this -> window  
 3. 이벤트에서 this -> 이벤트 객체  
 4. 메소드에서 this -> 메소드 객체  
 5. 메소드 내부의 중첩 함수에서 this -> window  
+
+* NodeJS에서 this의 의미  
+Node에서 window와 document는 Node에 없는 객체.  
+두 객체는  브라우저 런타임에서 넣어주는 객체이기 때문..  
+노드는 브라우저와는 다른 런타임이기 때문에 DOM과 관련된 두 객체를 넣지 않음..  
+
+* **Node에서 this 사용하기**  
+
+전역환경에서의 this는 module.exports 파일을 모듈로 사용할 수 있게 해주는 객체  
+함수선언문 안의 this는 global  
+화살표함수의 경우 this는 상위환경의 this를 물려받기 때문에 module.exports  
+즉. 전역환경에서의 this와 화살표함수의 this는 module.exports이다!!  
+
+**만약 특정함수 내에서 지역변수명과 동일한 외부의 전역변수를 참조하려면, this를 사용해서 this.전역변수명 형식으로 참조해야한다.**  
+
+
 
 ## 비구조화 할당
 
@@ -101,3 +126,9 @@ console.log(candyMachine.getCandy());
 // const { getCandy, status: {count}} = candyMachine; // 왼쪽에 {참조하고 싶은 변수,함수} 오른쪽에 할당하고 싶은 객체 씀 but, 얘도 this때매 에러
 
 ```
+
+## 모듈
+
+노드는 코드를 모듈로 만들수 있다.  
+모듈은 특정 기능을 하는 함수나 변수들의 집합  
+require('url'); 을 통해 import  
