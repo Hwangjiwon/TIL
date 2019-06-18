@@ -7,3 +7,23 @@
 > * vs에서 ctrl+` 하면 terminal창 열리고, node test1.js 하면 실행 됨  
 > * 코드 실행과정을 보여주는 곳 [http://latentflip.com/loupe/](http://latentflip.com/loupe/)
 
+```javascript
+
+const sayNode = function () {
+    console.log('Node');
+};
+const es = 'ES';
+const newObj={  //객체 리터럴
+    sayJS() { //객체 메서드에 함수 연결할 때 sayJS라는 함수가 할당되어 있구나
+        console.log('JS');
+    },
+    sayNode, //sayNode라는 변수 혹은 함수가 할당되어 있구나 ----- 1
+    [es+6]: 'Fantastic', //변수가 됨 ES6이라는 이름의 값의 동적naming
+};
+
+newObj.sayNode(); //newObj의 sayNode() 호출 ----- 2 이때는 변수인지 함수인지 명확히 알아야함
+newObj.sayJS();
+console.log(newObj.ES6);
+console.log(newObj.es6);
+
+```
