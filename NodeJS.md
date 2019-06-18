@@ -37,10 +37,10 @@ console.log(newObj.es6);
 
 ```javascript
 
-console.log(this);
+console.log(this); 
 
 function add(x,y){ //독립적 함수
-    console.log(this===global);
+    console.log(this===global); //true
     return console.log(x+y);
 }
 
@@ -50,7 +50,7 @@ var add2 = function(x,y){  // add2변수에 할당된 함수
 }
 
 const add3 = (x,y) => { // 화살표함수
-    console.log(this===global);
+    console.log(this===global); //false
     console.log(this); //자기문서객체
     return console.log(x+y);
 }
@@ -65,3 +65,5 @@ add4(10,20);
 add5(10);
 
 ```
+
+
