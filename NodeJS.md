@@ -197,5 +197,16 @@ http.createServer((req, res) => {
     console.log('server ready...');
 });
 ```
+  
+> **tip**   
+> favicon.ico 는 공식 제공 페이지임을 확인해 줌   
+  
 
+# Web Site vs Web Application
+
+* Web Site  
+html, css, js  
+
+* Web Application  
+Node 엔진 V8에서 돌아가는 http모듈, fs모듈 이용...  
 
