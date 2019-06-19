@@ -78,6 +78,46 @@ add5(10);
 화살표함수 사용하면 this를 사용하여 자기자신의 함수를 표현할 수 있음 
 global이 아니라  
 
+* **Java 람다식으로 화살표함수 이해하기**  
+```java
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.TextArea;
+
+public class Main {
+	Frame f = new Frame("My Frame");
+	TextArea ta = new TextArea();
+	Button b = new Button("Send");
+
+	public void onCreate() {
+
+//		b.addActionListener(new ActionListener(){
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				// callback
+//				// if) Main에 있는 TextArea (ta)에 출력하고 싶은 경우
+//				ta.append(this + "\n");
+//			}
+//		});
+		
+		b.addActionListener(e-> ta.append(this + "\n"));
+		
+		f.add(ta, "Center");
+		f.add(b, "South");
+		f.setSize(400, 500);
+		f.setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Main m = new Main();
+		m.onCreate();
+	}
+}
+
+```
+
+
 ## this
   
 * JavaScript에서 this가 만들어지는 경우  
