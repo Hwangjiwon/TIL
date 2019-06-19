@@ -78,7 +78,10 @@ add5(10);
 화살표함수 사용하면 this를 사용하여 자기자신의 함수를 표현할 수 있음 
 global이 아니라  
 
-* **Java 람다식으로 화살표함수 이해하기**  
+* **Java 람다식으로 NodeJS 화살표함수 이해하기**  
+
+ 람다식은 자바8부터 추가된 개념으로 **'식별자 없이 실행 가능한 익명의 함수 표현식'**  
+
 ```java
 import java.awt.Button;
 import java.awt.Frame;
@@ -172,3 +175,27 @@ console.log(candyMachine.getCandy());
 노드는 코드를 모듈로 만들수 있다.  
 모듈은 특정 기능을 하는 함수나 변수들의 집합  
 require('url'); 을 통해 import  
+
+
+## Server 구축
+
+```javascript
+const http = require('http');
+const fs = require('fs');
+
+
+http.createServer((req, res) => {
+    fs.readFile('./server2.html', (err, data) => {
+        if (err)
+            throw err;
+
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        //정상
+        res.end(data);
+    });
+}).listen(8888, () => {
+    console.log('server ready...');
+});
+```
+
+
