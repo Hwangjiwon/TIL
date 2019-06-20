@@ -202,7 +202,7 @@ http.createServer((req, res) => {
 > favicon.ico 는 공식 제공 페이지임을 확인해 줌   
   
 
-# Web Site vs Web Application
+## Web Site vs Web Application
 
 * Web Site  
 html, css, js  
@@ -210,3 +210,8 @@ html, css, js
 * Web Application  
 Node 엔진 V8에서 돌아가는 http모듈, fs모듈 이용...  
 
+
+## Mash up  
+
+인터넷에서 제공되는 서비스와 기능을 합치고 응용하여 새로운 서비스를 만들어 내는 것  
+ex) google chart api   
