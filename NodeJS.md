@@ -220,3 +220,14 @@ ex) google chart api
 ## Event
 
 .on 과 .addListener 는 같은 기능한다. .on()을 더 선호
+
+
+## XHR객체
+
+이전에는 웹 페이지를 여러 frame으로 구성해서 (menu, main, footer...) 각각의 Farme마다 자신의 window를 갖고 있었고, 자원을 공유하고 이벤트 활용하기 어려웠음..  
+이를 불편하게 여겨서 Frame사용을 지양하고 단일 페이지에 일부만 변화시키도록 함  
+<br>  
+XHR객체는 (XMLHttpRequest) 서버와 상호작용하기위해 사용된다.  
+전체 페이지의 요청없이도 페이지의 일부를 업데이트 할 수 있으며, 데이터를 받아올 수 있다.  
+주고 AJAX프로그래밍에 사용된다.  
+
