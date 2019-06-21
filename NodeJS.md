@@ -215,3 +215,8 @@ Node 엔진 V8에서 돌아가는 http모듈, fs모듈 이용...
 
 인터넷에서 제공되는 서비스와 기능을 합치고 응용하여 새로운 서비스를 만들어 내는 것  
 ex) google chart api   
+
+
+## Event
+
+.on 과 .addListener 는 같은 기능한다. .on()을 더 선호
